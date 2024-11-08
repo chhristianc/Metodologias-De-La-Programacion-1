@@ -31,6 +31,12 @@ namespace TP4.Adapter.Decorator
                 case 4:
                     fabrica = new FabricaDeAlumnosMuyEstudiosos();
                     break;
+                case 5:
+                    fabrica = new FabricaDeAlumnosDecorados();
+                    break;
+                case 6:
+                    fabrica = new FabricaDeAlumnosMuyEstudiososDecorados();
+                    break;
 
                 default:
                     break;
@@ -50,6 +56,18 @@ namespace TP4.Adapter.Decorator
                     break;
                 case 2:
                     fabrica = new FabricaDeAlumnos();
+                    break;
+                case 3:
+                    fabrica = new FabricaDeProfesores();
+                    break;
+                case 4:
+                    fabrica = new FabricaDeAlumnosMuyEstudiosos();
+                    break;
+                case 5: 
+                    fabrica = new FabricaDeAlumnosDecorados();
+                    break;
+                case 6:
+                    fabrica = new FabricaDeAlumnosMuyEstudiososDecorados();
                     break;
             }
 

@@ -12,23 +12,15 @@ namespace TP4.Adapter.Decorator
 
             for(int i=0; i<10; i++)
             {
-                alumno = (IAlumno)FabricaDeComparables.creaAleatorio(2);
-                IAlumno decorado = new DecoradoConLegajo(alumno);
-                IAlumno decorado2 = new DecoradoConNotaEnLetras(decorado);
-                IAlumno decorado3 = new DecoradoConPromocion(decorado2);
-                IAlumno decorado4 = new DecoradoConAsteriscos(decorado3);
-                AlumnoAdapter adaptado = new AlumnoAdapter(decorado4);
+                alumno = (IAlumno)FabricaDeComparables.creaAleatorio(5);
+                AlumnoAdapter adaptado = new AlumnoAdapter(alumno);
                 teacher.goToClass(adaptado);
             }
 
             for (int i = 0; i < 10; i++)
             {
-                alumno = (IAlumno)FabricaDeComparables.creaAleatorio(4);
-                IAlumno decorado = new DecoradoConLegajo(alumno);
-                IAlumno decorado2 = new DecoradoConNotaEnLetras(decorado);
-                IAlumno decorado3 = new DecoradoConPromocion(decorado2);
-                IAlumno decorado4 = new DecoradoConAsteriscos(decorado3);
-                AlumnoAdapter adaptado = new AlumnoAdapter(decorado4);
+                alumno = (IAlumno)FabricaDeComparables.creaAleatorio(6);
+                AlumnoAdapter adaptado = new AlumnoAdapter(alumno);
                 teacher.goToClass(adaptado);
             }
 
