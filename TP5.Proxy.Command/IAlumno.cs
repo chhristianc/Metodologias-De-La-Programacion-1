@@ -1,0 +1,17 @@
+﻿using System;
+
+namespace TP5.Proxy.Command
+{
+    public interface IAlumno : Comparable
+    {
+        int responderPregunta(int pregunta);
+        int getCalificacion();
+        void setCalificacion(int calificación);
+        string mostrarCalificacion();
+        string getNombre();
+        int getLegajo();
+        int getDni();
+        double getPromedio();
+        void setEstrategia(EstrategiaDeComparacion e);
+    }
+}
